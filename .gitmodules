@@ -1,0 +1,3 @@
+[submodule "unrealpak"]
+	path = unrealpak
+	url = https://github.com/xamarth/unrealpak.git
