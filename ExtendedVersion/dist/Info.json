@@ -1,0 +1,21 @@
+{
+  "ModName": "Max Stack Increase Extended",
+  "PackageName": "MaxStackIncreaseExtended",
+  "Thumbnail": "thumbnail.png",
+  "Version": "1.0.0",
+  "DebugMode": false,
+  "MinRevision": 82182,
+  "Author": "mariomo16",
+  "Dependencies": null,
+  "Tags": [
+    "Gameplay"
+  ],
+  "InstallRule": [
+    {
+      "Type": "Paks",
+      "Targets": [
+        "./Paks/"
+      ]
+    }
+  ]
+}
