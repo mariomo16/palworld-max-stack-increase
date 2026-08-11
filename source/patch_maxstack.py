@@ -1,7 +1,10 @@
 import json
+from pathlib import Path
 
-INPUT = "/mnt/user-data/uploads/DA_StaticItemDataAsset.json"
-OUTPUT = "/mnt/user-data/outputs/DA_StaticItemDataAsset_Mod.json"
+BASE_DIR = Path(__file__).resolve().parent
+
+INPUT = BASE_DIR / "./DA_StaticItemDataAsset.json"
+OUTPUT = BASE_DIR / "./DA_StaticItemDataAsset_Mod.json"
 
 OLD_VALUE = 9999
 NEW_VALUE = 99999
