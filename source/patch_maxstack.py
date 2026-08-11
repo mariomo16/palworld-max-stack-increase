@@ -1,5 +1,4 @@
 import json
-import sys
 
 INPUT = "/mnt/user-data/uploads/DA_StaticItemDataAsset.json"
 OUTPUT = "/mnt/user-data/outputs/DA_StaticItemDataAsset_Mod.json"
