@@ -14,7 +14,7 @@ with open(INPUT, encoding="utf-8") as f:
 
 exports = data["Exports"]
 
-changed = []
+changed = 0
 for export in exports:
     props = export.get("Data")
     if not isinstance(props, list):
@@ -23,13 +23,9 @@ for export in exports:
         if isinstance(prop, dict) and prop.get("Name") == "MaxStackCount":
             if prop.get("Value") == OLD_VALUE:
                 prop["Value"] = NEW_VALUE
-                changed.append(export.get("ObjectName"))
+                changed += 1
 
-print(f"Modified items: {len(changed)}")
-for name in changed[:15]:
-    print("  -", name)
-if len(changed) > 15:
-    print(f"  ... & {len(changed) - 15} more")
+print(f"Modified items: {changed}")
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
