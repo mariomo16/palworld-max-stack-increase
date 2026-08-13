@@ -25,7 +25,7 @@ for export in exports:
                 prop["Value"] = NEW_VALUE
                 changed += 1
 
-print(f"Modified items: {changed}")
+print(f"Total modified items: {changed}")
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
